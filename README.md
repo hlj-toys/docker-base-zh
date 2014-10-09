@@ -7,7 +7,7 @@
 * 基于 phusion/baseimage:0.9.15 (Ubuntu 14.04)
 * 时区设置为 +8 区
 * 软件源设置为 [mirrors.aliyun.com](http://mirrors.aliyun.com)
-* 包含 [Ansible](http://docs.ansible.com/) 最新版本（构建时）
+* 包含 [Ansible](http://docs.ansible.com/) 最新稳定版本（构建时）
 
 ###使用方法
 请参考 [phusion/baseimage](https://github.com/phusion/baseimage-docker)
