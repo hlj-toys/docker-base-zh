@@ -9,9 +9,6 @@ ENV HOME /root
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
 
-# Change the timezone
-RUN cp -f /usr/share/zoneinfo/PRC /etc/localtime
-
 # Set the software sources to the fastest server.
 ADD sources.list /etc/apt/sources.list
 
@@ -25,3 +22,6 @@ RUN pip install ansible
 
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+# Change the timezone
+RUN cp -f /usr/share/zoneinfo/PRC /etc/localtime
